@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    flex-direction: column;  /*makes sure that all the children of container are arranged vertically not horizontally*/
+    text-align: center;
+    img {
+        max-width: 250px;
+        align-self: center;
+        border-radius: 20px; /*gives border radius to theimage as well*/
+    }
+
+    a{
+        width: fit-content;
+        text-decoration: none; /* removes underline of anchor elements!*/
+        color: #222;
+        transition: transform 200ms ease-in-out;
+    }
+    a:hover {
+        transform: scale(1.05);
+    }
+
+    
+
+    
+
+    
+}
+.projectsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px
+
+}
+@media (width >= 800px) {
+    .projectsContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding: 0 30px;
+    }
+  }

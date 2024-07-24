@@ -1,0 +1,73 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;   /*this worked!! to align kids in the center*/
+
+    span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+    }
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.skillList{
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    max-width: 26ch;
+}
+
+hr{
+    width: 100px;
+    height: 1px;
+    border: none;
+    background-color: var(--text-color);
+    margin: 30px auto;
+}
+@media (width >= 800px) {
+    .skillList {
+      max-width: fit-content;
+      gap: 30px;
+      p{
+        font-size: 20px;
+
+      }
+      
+    
+
+  }
+  hr{
+    width: 300px
+  }
+}
+
+/*.tagList{
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+    li{
+        padding: 1rem;
+        border-radius: 0.5rem;
+    
+    }
+}
+
+.skillScroller{
+    max-width: 600px;
+}
+
+#scroll_in{
+    padding-block: 1rem;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}*/
