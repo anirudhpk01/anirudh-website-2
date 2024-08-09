@@ -13,6 +13,7 @@ import {useTheme} from '../../common/ThemeContext'
 import "./HeroStyles.module.css"
 
 function Hero() {
+    // Hero
     const {theme, toggleTheme} = useTheme()
     console.log(theme)
     const themeIcon = theme==='light'? sun: moon
